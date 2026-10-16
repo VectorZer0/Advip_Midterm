@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press & Compress | Image Optimizer</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">Press<span>&</span>Compress</a>
+
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="eyebrow">SIMPLE IMAGE OPTIMIZATION</p>
+            <h1>Less size.<br>Same big picture.</h1>
+            <p class="description">
+                Compress your images and make them easier to store,
+                share, and upload.
+            </p>
+        </section>
+
+        <section class="optimizer">
+            <div class="press">
+                <div class="press-top"></div>
+                <div class="press-chamber">
+                    <div class="image-stack">
+                        <span>JPG</span>
+                        <span>PNG</span>
+                        <span>SVG</span>
+                    </div>
+                </div>
+                <div class="press-base"></div>
+            </div>
+
+            <form id="upload-form">
+                <label for="images">Choose your images</label>
+                <input
+                    type="file"
+                    id="images"
+                    name="images"
+                    accept=".jpg,.jpeg,.png,.svg,.gif"
+                    multiple
+                    required
+                >
+
+                <button type="submit">Optimize images</button>
+                <p id="status" aria-live="polite">
+                    Your images will appear here after selection.
+                </p>
+            </form>
+        </section>
+
+        <section id="results" aria-live="polite"></section>
+    </main>
+
+    <footer>
+        <p>Press & Compress · A simple image optimization project</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
